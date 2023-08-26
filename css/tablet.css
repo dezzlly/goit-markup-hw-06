@@ -63,6 +63,33 @@
   .customer {
     width: 168px;
   }
+  .footer {
+    width: 552px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: baseline;
+  }
+  .logo-footer {
+    align-self: flex-start;
+  }
+  .footer-title {
+    text-align: left;
+  }
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .email-input-footer {
+    width: 264px;
+  }
+  .submit-btn-footer {
+    margin: 0;
+  }
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
