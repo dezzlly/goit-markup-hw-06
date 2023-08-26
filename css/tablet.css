@@ -1,0 +1,79 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .logo-header {
+    margin-right: 120px;
+  }
+  .menu {
+    display: flex;
+  }
+  .open-mobile-menu {
+    display: none;
+  }
+  .page-contacts {
+    display: block;
+    margin-left: auto;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contacts-link {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .page-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-tab-1x.jpg);
+  }
+  .page-hero-header {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: calc(60 / 56);
+    margin-bottom: 36px;
+  }
+  .benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .benefit {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .section-benefits-header {
+    text-align: left;
+  }
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
+  .customer {
+    width: 168px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .page-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-tab-2x.jpg);
+  }
+}

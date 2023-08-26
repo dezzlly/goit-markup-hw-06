@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -44,6 +47,11 @@
             </li>
           </ul>
         </nav>
+        <button class="open-mobile-menu" data-menu-open>
+          <svg class="open-mobile-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <address class="page-contacts">
           <ul class="contacts list">
             <li class="contacts-item">
@@ -59,11 +67,69 @@
           </ul>
         </address>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container">
+          <button class="close-mobile-menu" data-menu-close>
+            <svg class="close-mob-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mob-nav-list">
+            <li class="mob-nav-item">
+              <a href="./index.html" class="mob-nav-link">Studio</a>
+            </li>
+            <li class="mob-nav-item">
+              <a href="./portfolio.html" class="mob-nav-link">Portfolio</a>
+            </li>
+            <li class="mob-nav-item">
+              <a href="#" class="mob-nav-link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mob-contact-list">
+            <li class="mob-contact-item">
+              <a href="" class="mob-contact-link"></a>
+            </li>
+            <li class="mob-contact-item">
+              <a href="" class="mob-contact-link"></a>
+            </li>
+          </ul>
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link">
+                <svg class="mob-soc-icon">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link">
+                <svg class="mob-soc-icon">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link">
+                <svg class="mob-soc-icon">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link">
+                <svg class="mob-soc-icon">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main class="page-main">
       <!-- HERO -->
       <section class="page-hero">
-        <div class="page-hero-container">
+        <div class="container">
           <h1 class="page-hero-header">
             Effective Solutions for Your Business
           </h1>
@@ -187,7 +253,7 @@
           <ul class="team list">
             <li class="teammate">
               <img
-                src="./images/home/photos/MarkGuerrero.jpg"
+                src="./images/home/photos/MarkGuerrero1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -249,7 +315,7 @@
             </li>
             <li class="teammate">
               <img
-                src="./images/home/photos/TomFord.jpg"
+                src="./images/home/photos/TomFord1x.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -311,7 +377,7 @@
             </li>
             <li class="teammate">
               <img
-                src="./images/home/photos/CamilaGarcia.jpg"
+                src="./images/home/photos/CamilaGarcia1x.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -373,7 +439,7 @@
             </li>
             <li class="teammate">
               <img
-                src="./images/home/photos/DanielWilson.jpg"
+                src="./images/home/photos/DanielWilson1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -518,7 +584,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="footer container">
         <div class="footer-first">
           <a class="logo-footer link" href="./index.html">
@@ -608,9 +674,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="modal-section is-hidden" data-modal>
+    <!-- <div class="modal-section is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="close-modal" type="button">
           <svg
@@ -726,8 +792,9 @@
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
